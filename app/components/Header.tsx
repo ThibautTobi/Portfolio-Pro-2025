@@ -14,20 +14,24 @@ export default function Header (){
                 </h1>
                 <nav className="flex flex-1 justify-end">
                     <ul className="flex items-center gap-2">
-                        <Link 
-                            href="https://github.com/ThibautTobi"
-                            aria-label="GitHub"
-                            className={cn(buttonVariants({ variant: "outline"}), "size-6 p-0")}
-                        >
-                           <GithubIcon size={12} className="text-foreground"/> 
-                        </Link>
-                        <Link 
-                            href="https://www.linkedin.com/in/thibaut-denis-2b12b21b1/"
-                            aria-label="Linkedin"
-                            className={cn(buttonVariants({ variant: "outline"}), "size-6 p-0")}
-                        >
-                           <LinkedinIcon size={12} className="text-foreground"/> 
-                        </Link>
+                        <li>
+                            <Link 
+                                href="https://github.com/ThibautTobi"
+                                aria-label="GitHub"
+                                className={cn(buttonVariants({ variant: "outline"}), "size-6 p-0")}
+                            >
+                            <GithubIcon size={12} className="text-foreground"/> 
+                            </Link>
+                        </li>
+                        <li>
+                            <Link 
+                                href="https://www.linkedin.com/in/thibaut-denis-2b12b21b1/"
+                                aria-label="Linkedin"
+                                className={cn(buttonVariants({ variant: "outline"}), "size-6 p-0")}
+                            >
+                            <LinkedinIcon size={12} className="text-foreground"/> 
+                            </Link>
+                        </li>
                     </ul>
                 </nav>
             </div>
