@@ -7,8 +7,6 @@ import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
-// modifier la carte qui est en link pour avoir les deux possibiliter de lien
-
 export default function SideProjectSection (){
 
     const [visibleProjects,setVisibleProjetcs] = useState(2);
@@ -69,13 +67,9 @@ export type SideProjectProps = {
     nonfini : boolean;
 }
 export function SideProject  ( props : SideProjectProps) {
-    // integrer :         
-    //  {props.site && (
-    //      <Link href={{props.site}} >site </Link>
-    //   )}
 
     return (
-        <Link href={props.url} className="relative inline-flex hover:rounded-lg gap-4 p-2 hover:bg-accent/30 transition-colors group w-full flex-col">
+        <div className="relative inline-flex hover:rounded-lg gap-4 p-2 hover:bg-accent/30 transition-colors group w-full flex-col">
                 <div className="flex flex-row items-center">
                     <span className="bg-accent text-accent-foreground p-4 mr-3 rounded-sm">
                         <props.Logo size={16}/>
@@ -85,7 +79,27 @@ export function SideProject  ( props : SideProjectProps) {
                         <p className="text-sm text-muted-foreground">{props.description}</p>
                     </div>
                 </div>
-                {/* mettre en div et flex row pour le mobile  */}
+
+                {/* Lien vers GitHub + Lien vers le site si dispo */}
+                <div className="flex gap-4 px-2 mt-2">
+                    <Link
+                    href={props.url}
+                    target="_blank"
+                    className="text-sm hover:underline"
+                    >
+                        <Button size="sm" variant="outline">Code GitHub</Button>
+                    </Link>
+                    {props.site && (
+                    <Link
+                        href={props.site}
+                        target="_blank"
+                        className="text-sm hover:underline"
+                    >
+                        <Button size="sm" variant="outline">Site Web</Button>
+                    </Link>
+                    )}
+                </div>
+
                 <div className="flex flex-row justify-between">
                     <div className="top-2 right-2">
                         {props.formation && (
@@ -98,11 +112,11 @@ export function SideProject  ( props : SideProjectProps) {
                             <Badge variant="outline" className="border-4 m-2">Non Fini</Badge>
                         )}
                     </div>
-                    <div className="top-1/2 group-hover:translate-x-2 group-hover:translate-y-1 transition-transform">
+                    <div className="top-1/2 group-hover:translate-x-2 group-hover:translate-y-1 transition-transform mr-2">
                         <MoveRight />
                     </div>
                 </div>
-        </Link>
+        </div>
     )
 }
 
@@ -111,8 +125,7 @@ export const SIDE_PROJECTS : SideProjectProps[] = [
         Logo : GitCompareArrows,
         title : "Projet Portfolio actuel",
         description : " création portfolio TypeScript Next Js",
-        url : "",
-        // url : "https://github.com/ThibautTobi/photo-web-site",
+        url : "https://github.com/ThibautTobi/Portfolio-Pro-2025",
         site : "",
         formation : false,
         fin : true,
@@ -122,8 +135,7 @@ export const SIDE_PROJECTS : SideProjectProps[] = [
         Logo : GitCompareArrows,
         title : "Projet Portfolio 2",
         description : " création deuxieme portfolio ",
-        url : "https://www.denis-thibaut.com/",
-        // url : "https://github.com/ThibautTobi/photo-web-site",
+        url : "https://github.com/ThibautTobi/photo-web-site",
         site : "https://www.denis-thibaut.com/",
         formation : false,
         fin : true,
@@ -152,8 +164,7 @@ export const SIDE_PROJECTS : SideProjectProps[] = [
         title : "Projet Premier Portfolio",
         description : "creation de mon premier portfolio ",
         site : "https://thibauttobi.github.io/Portfolio-Thibaut/",
-        url : "https://thibauttobi.github.io/Portfolio-Thibaut/",
-        // url : "https://github.com/ThibautTobi/Portfolio-Thibaut" ,
+        url : "https://github.com/ThibautTobi/Portfolio-Thibaut",
         formation : false ,
         fin : true,
         nonfini : false,
@@ -161,7 +172,7 @@ export const SIDE_PROJECTS : SideProjectProps[] = [
     {
         Logo : GitCompareArrows,
         title : "Projet 7 : Back-End-Mon-Vieux-Grimoire",
-        description : " blablablabloblo ",
+        description : " creation du Back end en Node Js",
         url : "https://github.com/ThibautTobi/P7-Back-End-Mon-Vieux-Grimoire",
         formation : true,
         fin : true,
