@@ -10,11 +10,11 @@ export default function ContactSection (){
             <Card className="p-4 flex-2 flex flex-col items-center justify-center">
                 <h3 className="text-2xl p-2">Contacts</h3>
                 <p className="text-muted-foreground p-2">Mail Profesionnel</p>
-                <Link href="mailto:thibaut.denis.developpeur@gmail.com">
+                <Link href="mailto:thibaut.denis.developpeur@gmail.com" aria-label="Mail" >
                     <Mail className="w-10 h-10 transition delay-200 duration-200 ease-in-out hover:-translate-y-1 hover:scale-130"/>
                 </Link>
                 <p className="text-muted-foreground mt-4 p-2">Linkedin</p>
-                <Link href="https://www.linkedin.com/in/thibaut-denis-2b12b21b1/">
+                <Link href="https://www.linkedin.com/in/thibaut-denis-2b12b21b1/" aria-label="Linkedin" >
                     <LinkedinIcon size={42} className="text-foreground transition delay-200 duration-200 ease-in-out hover:-translate-y-1 hover:scale-130"/> 
                 </Link>
             </Card>

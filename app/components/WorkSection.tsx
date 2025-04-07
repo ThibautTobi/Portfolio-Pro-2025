@@ -34,11 +34,12 @@ export type WorkProps = {
     date : string;
     freelance? : boolean;
     url : string;
+    aria : string;
 };
 
 export function Work ( props : WorkProps) {
     return (
-        <Link href={props.url} className="inline-flex item-center p-2 hover:rounded-lg gap-4 hover:bg-accent/50 transition-colors">
+        <Link href={props.url} aria-label={props.aria} className="inline-flex item-center p-2 hover:rounded-lg gap-4 hover:bg-accent/50 transition-colors">
             <Image src={props.image} alt={props.title} width={40} height={40} className="w-10 h-10 object-contain rounded-sm" unoptimized/>
             <div className="mr-auto">
                 <div className="flex items-center gap-2">
@@ -59,6 +60,7 @@ export const WORKS : WorkProps[] = [
         date : "2023 - aujourd'hui",
         freelance :false,
         url : "/",
+        aria : "perso",
     },
     {
         image : "/image/openclassrooms_logo.jpg",
@@ -67,5 +69,6 @@ export const WORKS : WorkProps[] = [
         date : "2023",
         freelance : false,
         url : "https://openclassrooms.com/fr/",
+        aria : "OpenClassRooms",
     }
 ]

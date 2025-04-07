@@ -15,10 +15,10 @@ export default function Contact (){
                     Hate de pouvoir echanger avec vous.<br/> A bientot ...
                 </h2>
                 <div className="flex justify-center items-center flex-col sm:flex-row gap-4">
-                    <Link href="mailto:thibaut.denis.developpeur@gmail.com" >
+                    <Link href="mailto:thibaut.denis.developpeur@gmail.com" aria-label="Mail" >
                         <Mail className="w-10 h-10 transition-transform duration-300 hover:scale-110"/>
                     </Link>
-                    <Link href="https://www.linkedin.com/in/thibaut-denis-2b12b21b1/">
+                    <Link href="https://www.linkedin.com/in/thibaut-denis-2b12b21b1/" aria-label="Linkedin" >
                            <LinkedinIcon size={42} className="text-foreground transition-transform duration-300 hover:scale-110"/> 
                     </Link>
                 </div>
