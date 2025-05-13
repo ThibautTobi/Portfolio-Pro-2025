@@ -123,7 +123,7 @@ export function SideProject  ( props : SideProjectProps) {
 export const SIDE_PROJECTS : SideProjectProps[] = [
     {
         Logo : GitCompareArrows,
-        title : "Projet Portfolio actuel",
+        title : "Project Portfolio actuel",
         description : " création portfolio TypeScript Next Js",
         url : "https://github.com/ThibautTobi/Portfolio-Pro-2025",
         site : "",
@@ -133,8 +133,8 @@ export const SIDE_PROJECTS : SideProjectProps[] = [
     },
     {
         Logo : GitCompareArrows,
-        title : "Projet Portfolio 2",
-        description : " création deuxieme portfolio ",
+        title : "Project Portfolio 2",
+        description : " création deuxiéme portfolio ",
         url : "https://github.com/ThibautTobi/photo-web-site",
         site : "https://www.denis-thibaut.com/",
         formation : false,
@@ -143,8 +143,8 @@ export const SIDE_PROJECTS : SideProjectProps[] = [
     },
     {
         Logo : GitCompareArrows,
-        title : "Projet Perso",
-        description : " création site photographe en Next Js / Node Js avec gestion client , commande , selection et recuperation photos",
+        title : "Project Personnel",
+        description : " création site photographe en Next Js / Node Js avec gestion client , commande , sélection et recuperation photos",
         url : "https://github.com/ThibautTobi/photo-web-site",
         formation : false,
         fin : false,
@@ -152,8 +152,8 @@ export const SIDE_PROJECTS : SideProjectProps[] = [
     },
     {
         Logo : GitCompareArrows,
-        title : "Projet Perso",
-        description : " création site e-commerce react / Node Js avec systeme de paiements",
+        title : "Project Personnel",
+        description : " création site e-commerce react / Node Js avec systéme de paiements",
         url : "https://github.com/ThibautTobi/photo-web-site",
         formation : false,
         fin : false,
@@ -161,8 +161,8 @@ export const SIDE_PROJECTS : SideProjectProps[] = [
     },
     {
         Logo : GitCompareArrows,
-        title : "Projet Premier Portfolio",
-        description : "creation de mon premier portfolio ",
+        title : "Project Premier Portfolio",
+        description : "création de mon premier portfolio ",
         site : "https://thibauttobi.github.io/Portfolio-Thibaut/",
         url : "https://github.com/ThibautTobi/Portfolio-Thibaut",
         formation : false ,
@@ -171,8 +171,8 @@ export const SIDE_PROJECTS : SideProjectProps[] = [
     },
     {
         Logo : GitCompareArrows,
-        title : "Projet 7 : Back-End-Mon-Vieux-Grimoire",
-        description : " creation du Back end en Node Js",
+        title : "Project 7 : Back-End-Mon-Vieux-Grimoire",
+        description : " création du Back end en Node Js",
         url : "https://github.com/ThibautTobi/P7-Back-End-Mon-Vieux-Grimoire",
         formation : true,
         fin : true,
@@ -180,7 +180,7 @@ export const SIDE_PROJECTS : SideProjectProps[] = [
     },
     {
         Logo : GitCompareArrows,
-        title : "Projet 6 Site Kasa Location immobiliere",
+        title : "Project 6 Site Kasa Location immobilière",
         description : "création Page React",
         url : "https://github.com/ThibautTobi/P6_Site_Kasa_Location_immobiliere",
         formation : true,
@@ -189,8 +189,8 @@ export const SIDE_PROJECTS : SideProjectProps[] = [
     },
     {
         Logo : GitCompareArrows,
-        title : "Projet 5 : Nina Carducci",
-        description : "optimisation et referencement de la page web",
+        title : "Project 5 : Nina Carducci",
+        description : "optimisation et référencement de la page web",
         url : "https://github.com/ThibautTobi/P5_Nina_Carducci",
         formation : true,
         fin : true,
@@ -198,8 +198,8 @@ export const SIDE_PROJECTS : SideProjectProps[] = [
     },
     {
         Logo : GitCompareArrows,
-        title : "Projet 3 : Portfolio architecte sophie bluel",
-        description : "integration du javascript",
+        title : "Project 3 : Portfolio architecte sophie bluel",
+        description : "intégration du javascript",
         url : "https://github.com/ThibautTobi/Projet_3_Portfolio-architecte-sophie-bluel",
         formation : true,
         fin : true,
@@ -207,7 +207,7 @@ export const SIDE_PROJECTS : SideProjectProps[] = [
     },
     {
         Logo : GitCompareArrows,
-        title : "Projet 2 : Booki",
+        title : "Project 2 : Booki",
         description : " création responsive de la page HTML",
         url : "https://github.com/ThibautTobi/Projet_2",
         formation : true,

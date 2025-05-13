@@ -4,7 +4,7 @@ export default function Footer (){
         <footer className="bg-card flex justify-center">
             <section className="py-8">
                 <p className="text-muted-foreground text-sm">
-                    @Copywrite 2025 Thibaut Developpement
+                    @Copywrite 2025 Thibaut Développement
                 </p>
             </section>
         </footer>

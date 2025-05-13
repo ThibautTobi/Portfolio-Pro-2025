@@ -12,7 +12,7 @@ export default function Contact (){
             <Card className="p-6 flex flex-col items-center text-center">
                 
                 <h2 className="scroll-m-20 p-5 text-xl m-auto text-center font-semibold tracking-tight first:mt-0">
-                    Hate de pouvoir echanger avec vous.<br/> A bientot ...
+                    Hâte de pouvoir échanger avec vous.<br/> A bientôt ...
                 </h2>
                 <div className="flex justify-center items-center flex-col sm:flex-row gap-4">
                     <Link href="mailto:thibaut.denis.developpeur@gmail.com" aria-label="Mail" >

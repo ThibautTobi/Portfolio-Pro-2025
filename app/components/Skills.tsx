@@ -38,7 +38,7 @@ export default function Skills (){
                         </div>
                       </div>
                       <p className="text-m text-muted-foreground">
-                        Mon premier Framework Javascript est React, je trouve la facon de coder en composant cool entre autre.
+                        Mon premier Framework Javascript est React, je trouve la façon de coder en composant cool entre autre.
                       </p>
                     </div>
                   </Card>
@@ -53,7 +53,7 @@ export default function Skills (){
                         TailwindCss
                       </h3>
                       <p className="text-m text-muted-foreground">
-                          Mon premier Framework css est <span>TailwindCss</span> je le trouve pratique pour coder rapidement et vraiment intéressant , ont peux toujours utiliser le CSS pour des besoins plus complexe celon les besoin du projet.
+                          Mon premier Framework css est <span>TailwindCss</span> je le trouve pratique pour coder rapidement et vraiment intéressant , on peut toujours utiliser le CSS pour des besoins plus complexes selon les besoins du projet.
                       </p>  
                     </div>
                   </Card>
@@ -67,7 +67,7 @@ export default function Skills (){
                           Node Js
                       </h3>
                       <p className="text-m text-center text-muted-foreground">
-                        Mon premier language Back-end de formation. c&apos;est le language back-end avec lequel je suis le plus a l&apos;aise actuellement.
+                        Mon premier langage Back-end de formation. C&apos;est le langage back-end avec lequel je suis le plus à l&apos;aise actuellement.
                       </p>
                     </div>
                   </Card>

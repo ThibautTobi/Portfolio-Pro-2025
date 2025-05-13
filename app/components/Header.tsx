@@ -10,7 +10,7 @@ export default function Header (){
         <header className="top-0 py-4">
             <div className="flex items-baseline max-w-3xl px-4 m-auto ">
                 <h1 className="text-xl font-bold text-primary">
-                Portfolio Thibaut Developpeur
+                Portfolio Thibaut Développeur
                 </h1>
                 <nav className="flex flex-1 justify-end">
                     <ul className="flex items-center gap-2">

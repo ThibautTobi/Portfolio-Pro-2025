@@ -9,7 +9,7 @@ export default function ContactSection (){
         <>
             <Card className="p-4 flex-2 flex flex-col items-center justify-center">
                 <h3 className="text-2xl p-2">Contacts</h3>
-                <p className="text-muted-foreground p-2">Mail Profesionnel</p>
+                <p className="text-muted-foreground p-2">Email Professionnel</p>
                 <Link href="mailto:thibaut.denis.developpeur@gmail.com" aria-label="Mail" >
                     <Mail className="w-10 h-10 transition delay-200 duration-200 ease-in-out hover:-translate-y-1 hover:scale-130"/>
                 </Link>
