@@ -25,7 +25,7 @@ export default function Header (){
                         </li>
                         <li>
                             <Link 
-                                href="https://www.linkedin.com/in/thibaut-denis-2b12b21b1/"
+                                href="https://www.linkedin.com/in/denis-thibaut-développeur/"
                                 aria-label="Linkedin"
                                 className={cn(buttonVariants({ variant: "outline"}), "size-6 p-0")}
                             >
