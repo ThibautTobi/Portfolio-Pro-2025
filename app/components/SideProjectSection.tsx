@@ -121,6 +121,26 @@ export function SideProject  ( props : SideProjectProps) {
 }
 
 export const SIDE_PROJECTS : SideProjectProps[] = [
+            {
+        Logo : GitCompareArrows,
+        title : "LT coaching V2",
+        description : " création site vitrine services sportifs TypeScript Next Js",
+        url : "https://github.com/ThibautTobi/LTcoaching-V2",
+        site : "",
+        formation : false,
+        fin : false,
+        nonfini : true,
+    },
+        {
+        Logo : GitCompareArrows,
+        title : "LT coaching V1",
+        description : " création site vitrine services sportifs TypeScript Next Js",
+        url : "https://github.com/ThibautTobi/LTcoaching",
+        site : "https://lt-coaching.vercel.app/",
+        formation : false,
+        fin : true,
+        nonfini : false,
+    },
     {
         Logo : GitCompareArrows,
         title : "Project Portfolio actuel",
