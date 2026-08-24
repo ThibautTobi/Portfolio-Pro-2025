@@ -9,24 +9,26 @@ import Separator from "./components/separateur";
 
 export default function Home() {
   return (
-    <main>
+    <>
       <Header />
-      <Spacing size="mb" />
-      <Hero />
-      <Spacing size="mb" />
-      <Separator />
-      <Spacing size="mb" />
-      <Presentation />
-      <Spacing size="mb" />
-      <Separator />
-      <Spacing size="mb" />
-      <Skills />
-      <Spacing size="mb" />
-      <Separator />
-      <Spacing size="mb" />
-      <Contact />
-      <Spacing size="mb" />
+        <main>    
+          <Spacing size="mb" />
+          <Hero />
+          <Spacing size="mb" />
+          <Separator />
+          <Spacing size="mb" />
+          <Presentation />
+          <Spacing size="mb" />
+          <Separator />
+          <Spacing size="mb" />
+          <Skills />
+          <Spacing size="mb" />
+          <Separator />
+          <Spacing size="mb" />
+          <Contact />
+          <Spacing size="mb" />
+        </main>
       <Footer />
-    </main>
+    </>
   );
 }
