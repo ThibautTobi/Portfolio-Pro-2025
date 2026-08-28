@@ -1,33 +1,51 @@
-import Skills from "./components/Skills";
+//import Skills from "./components/Skills";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import { Hero } from "./components/Hero";
-import { Spacing } from "./components/Spacing";
+//import { Hero } from "./components/Hero";
+//import { Spacing } from "./components/Spacing";
 import Presentation from "./components/Presentation";
-import Contact from "./components/Contact";
-import Separator from "./components/separateur";
+// import Contact from "./components/Contact";
+// import Separator from "./components/separateur";
+// import About from "./components/About";
 
 export default function Home() {
   return (
     <>
       <Header />
-        <main>    
+      <Presentation />
+
+      {/* ancienne version */}
+
+        {/* <main>    
           <Spacing size="mb" />
           <Hero />
           <Spacing size="mb" />
+
           <Separator />
+
           <Spacing size="mb" />
-          <Presentation />
+          <About />
           <Spacing size="mb" />
+
           <Separator />
+
           <Spacing size="mb" />
           <Skills />
           <Spacing size="mb" />
+
           <Separator />
+
+          <Spacing size="mb" />
+          <Presentation />
+          <Spacing size="mb" />
+
+          <Separator />
+
           <Spacing size="mb" />
           <Contact />
           <Spacing size="mb" />
-        </main>
+        </main> */}
+
       <Footer />
     </>
   );
