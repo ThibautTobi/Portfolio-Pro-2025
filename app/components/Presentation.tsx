@@ -73,6 +73,8 @@ export default function Presentation (){
             <WorkSection />
             <Spacing size="mb" />
 
+            <Separator />
+            
             {/* Contact / recrutement */}
             <Spacing size="mb" />
             <ContactSection />
