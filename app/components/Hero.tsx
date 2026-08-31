@@ -1,9 +1,9 @@
 import Image from "next/image"
 import moi from "@/public/image/image-portfoliot-dev.webp"
-// import SpanText from "./SpanText"
+//import SpanText from "./SpanText"
 // import { PlaneTakeoff } from 'lucide-react';
 // import france from "@/public/image/icon-france-32.png"
-// import { GroupIcon } from "./icons/Groupicon"
+//import { GroupIcon } from "./icons/Groupicon"
 
 
 // a tester une autre facon de faire .
@@ -16,25 +16,51 @@ import moi from "@/public/image/image-portfoliot-dev.webp"
 // }
 //  corriger et importer en svg
 
+
+/**
+ * Hero principal du portfolio.
+ *
+ * Objectifs :
+ * - présenter immédiatement ton profil ;
+ * - indiquer clairement ton niveau ;
+ * - afficher ton orientation Front-End / Full Stack ;
+ * - indiquer que tu recherches un CDI ;
+ * - supprimer toute référence à l'alternance.
+ */
+
 export const Hero = () => {
 
     return (
-                <section
+        <section
             aria-labelledby="hero-title"
-            className="flex max-lg:flex-col max-w-5xl px-4 py-16 mx-auto items-center gap-10"
+            className="flex flex-col max-w-5xl px-4 py-16 mx-auto gap-10"
         >
-            <div className="flex-1">
-                <h1
-                    id="hero-title"
-                    className="font-caption text-4xl text-primary md:text-5xl"
-                >
-                    Développeur Web Junior
-                </h1>
+            <div className="flex flex-col lg:flex-row items-center gap-8">
 
-                <p className="font-caption text-2xl mt-2 mb-6">
-                    Front-End · Full Stack
-                </p>
+                <div className="flex-1">
+                    <h1
+                        id="hero-title"
+                        className="font-caption text-4xl text-primary md:text-5xl"
+                    >
+                        Développeur Web Junior
+                    </h1>
 
+                    <p className="font-caption text-2xl mt-2 mb-6">
+                        Front-End · Full Stack
+                    </p>
+                </div>
+                <div className="flex-shrink-0">
+                    <Image
+                        src={moi}
+                        width={200}
+                        height={200}
+                        priority
+                        alt="Portrait de Denis Thibaut, développeur web junior"
+                        className="border-2 border-white rounded-full"
+                    />
+                </div>
+            </div>
+            <div>
                 <p className="text-lg leading-relaxed">
                     Passionné par le développement web et les technologies
                     numériques, j&apos;aime transformer des idées en interfaces
@@ -42,37 +68,34 @@ export const Hero = () => {
                 </p>
 
                 <p className="text-lg leading-relaxed mt-4">
-                    Je travaille principalement avec{' '}
+                    Je travaille principalement avec : {''}
                     <strong>JavaScript, TypeScript, React et Next.js</strong>,
                     tout en restant ouvert à de nouveaux frameworks et
                     environnements techniques.
                 </p>
 
-                <div className="flex flex-wrap gap-4 mt-8">
+                {/* CTA */}
+                <div className="flex flex-wrap gap-4 mt-8 justify-center">
                     <a
                         href="#projects"
-                        className="..."
+                        className="inline-flex items-center justify-center rounded-md px-5 py-3 font-medium border-2 hover:bg-accent transition-colors"
                     >
                        [ Voir mes projets ]
                     </a>
 
                     <a
                         href="#contact"
-                        className="..."
+                        className="inline-flex items-center justify-center rounded-md px-5 py-3 font-medium border-2 hover:bg-accent transition-colors"
                     >
                        [ Me contacter ]
                     </a>
                 </div>
-            </div>
 
-            <div className="p-6">
-                <Image
-                    src={moi}
-                    width={200}
-                    height={200}
-                    alt="Portrait de Denis Thibaut, développeur web junior"
-                    className="border-2 border-white rounded-full"
-                />
+                {/* Disponibilité */}
+                <p className="mt-6 text-sm text-accent-foreground">
+                    Recherche actuellement un CDI en tant que développeur web
+                    junior.
+                </p>
             </div>
         </section>
     )
