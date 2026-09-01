@@ -39,7 +39,7 @@ export default function Footer () {
                         </a>
 
                         <a
-                            href="https://www.linkedin.com/in/denis-thibaut-développeur/"
+                            href="https://www.linkedin.com/in/thibaut-denis-2b12b21b1/"
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="LinkedIn"
