@@ -1,4 +1,3 @@
-//import { Badge } from "@/components/ui/badge";
 import {
     Lightbulb,
     RefreshCw,
@@ -13,6 +12,7 @@ import {
  * facilement modifier ou ajouter une qualité sans modifier
  * toute la structure JSX.
  */
+
 const qualities = [
     {
         icon: Lightbulb,
@@ -47,6 +47,7 @@ const qualities = [
  * - Hero = présentation très rapide ;
  * - About = personnalité, méthode de travail et recherche.
  */
+
 export default function About() {
     return (
         <section
@@ -56,11 +57,6 @@ export default function About() {
         >
             {/*  TITRE DE SECTION */}
             <div className="max-w-5xl mx-auto">
-                <div className="flex justify-center">
-                    {/* <Badge variant={"outline"} className="text-xl text-primary m-8 text-center border-4" >
-                        À propos
-                    </Badge> */}
-                </div>
 
                 <p className="text-primary font-bold text-lg mb-4">
                     À propos
@@ -104,11 +100,6 @@ export default function About() {
                         la solution la plus adaptée.
                     </p>
 
-                    {/* 
-                        Petite touche personnelle inspirée de ce que tu
-                        m'as expliqué sur ton rapport à la construction
-                        et aux LEGO.
-                    */}
                     <p>
                         J&apos;aime construire, comprendre comment les
                         éléments fonctionnent ensemble et chercher à améliorer
