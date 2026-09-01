@@ -1,64 +1,16 @@
-// import { cn } from "@/lib/utils"
-// import { buttonVariants } from "@/components/ui/button"
-// import { GithubIcon } from "./icons/Githubicon"
-// import Link from "next/link"
-// import { LinkedinIcon } from "./icons/Linkedinicon"
-
-// export default function Header (){
-
-//     return (
-//         <header className="top-0 py-4">
-//             <div className="flex items-baseline max-w-5xl px-4 m-auto ">
-//                 <Link
-//                 // en attente de redirection personnaliser
-//                     href="/"
-//                     className="text-xl font-bold text-primary"
-//                     aria-label="Accueil - Thibaut Denis"
-//                 >
-//                     Denis Thibaut
-//                 </Link>
-//                 <nav className="flex flex-1 justify-end">
-//                     <ul className="flex items-center gap-2">
-//                         <li>
-//                             <Link 
-//                                 href="https://github.com/ThibautTobi"
-//                                 aria-label="GitHub"
-//                                 className={cn(buttonVariants({ variant: "outline"}), "size-6 p-0")}
-//                             >
-//                             <GithubIcon size={12} className="text-foreground"/> 
-//                             </Link>
-//                         </li>
-//                         <li>
-//                             <Link 
-//                                 href="https://www.linkedin.com/in/denis-thibaut-développeur/"
-//                                 aria-label="Linkedin"
-//                                 className={cn(buttonVariants({ variant: "outline"}), "size-6 p-0")}
-//                             >
-//                             <LinkedinIcon size={12} className="text-foreground"/> 
-//                             </Link>
-//                         </li>
-//                     </ul>
-//                 </nav>
-//             </div>
-//         </header>
-//     )
-// }
 "use client";
-
-// import {
-//     Menu,
-//     X,
-// } from "lucide-react";
 
 import { useState } from "react";
 import { GithubIcon } from "./icons/Githubicon";
 import { LinkedinIcon } from "./icons/Linkedinicon";
+
 /**
  * Navigation principale du portfolio.
  *
  * Les href correspondent directement aux IDs
  * présents sur les différentes sections.
  */
+
 const navigation = [
     {
         label: "Accueil",
@@ -92,12 +44,14 @@ const navigation = [
  * Le composant reste Client Component car le menu mobile
  * utilise un état React.
  */
+
 export default function Header (){
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     /**
      * Ferme le menu mobile lorsqu'un lien est sélectionné.
      */
+
     const handleNavigation = () => {
         setIsMenuOpen(false);
     };
@@ -148,7 +102,7 @@ export default function Header (){
                     </a>
 
                     <a
-                        href="https://www.linkedin.com/in/denis-thibaut-développeur/"
+                        href="https://www.linkedin.com/in/thibaut-denis-2b12b21b1/"
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="Voir mon profil LinkedIn"
@@ -159,31 +113,6 @@ export default function Header (){
                 </div>
 
                 {/* BOUTON MENU MOBILE */}
-
-                {/* <button
-                    type="button"
-                    className="md:hidden"
-                    aria-label={
-                        isMenuOpen
-                            ? "Fermer le menu"
-                            : "Ouvrir le menu"
-                    }
-                    aria-expanded={isMenuOpen}
-                    aria-controls="mobile-navigation"
-                    onClick={() => setIsMenuOpen((open) => !open)}
-                >
-                    {isMenuOpen ? (
-                        <X
-                            aria-hidden="true"
-                            className="w-6 h-6"
-                        />
-                    ) : (
-                        <Menu
-                            aria-hidden="true"
-                            className="w-6 h-6"
-                        />
-                    )}
-                </button> */}
 
                 <button
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
