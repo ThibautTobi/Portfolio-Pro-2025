@@ -8,7 +8,12 @@ import "./globals.css";
  * sociales de comprendre le contenu de ton site.
  */
 
+const siteUrl = "https://portfolio-pro-2025.vercel.app";
+
 export const metadata: Metadata = {
+
+    metadataBase: new URL(siteUrl),
+
     title: "Denis Thibaut | Développeur Web Junior Front-End / Full Stack",
 
     description:
@@ -31,12 +36,18 @@ export const metadata: Metadata = {
         "JavaScript",
         "TypeScript",
         "Node.js",
+        "développeur React",
+        "développeur Next.js",
     ],
+
+    alternates: {
+        canonical: "/",
+    },
 
     openGraph: {
         type: "website",
-
         locale: "fr_FR",
+        url: siteUrl,
 
         title:
             "Denis Thibaut | Développeur Web Junior Front-End / Full Stack",
