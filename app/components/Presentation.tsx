@@ -17,8 +17,7 @@ import Separator from "./separateur";
 export default function Presentation (){
 
     return (
-        <main>
-
+        <>
             {/* Présentation principale */}
             <Spacing size="mb" />
             <Hero />
@@ -58,7 +57,6 @@ export default function Presentation (){
             <Spacing size="mb" />
             <ContactSection />
             <Spacing size="mb" />
-
-        </main> 
+        </> 
     );
 };
