@@ -65,14 +65,14 @@ export const Hero = () => {
                         href="#projects"
                         className="inline-flex items-center justify-center rounded-md px-5 py-3 font-medium border-2 hover:bg-accent transition-colors"
                     >
-                       [ Voir mes projets ]
+                        Voir mes projets
                     </a>
 
                     <a
                         href="#contact"
                         className="inline-flex items-center justify-center rounded-md px-5 py-3 font-medium border-2 hover:bg-accent transition-colors"
                     >
-                       [ Me contacter ]
+                        Me contacter
                     </a>
                 </div>
 
