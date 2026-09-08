@@ -25,10 +25,7 @@ test.describe("Responsive - navigation mobile", () => {
 
     await menuButton.click();
 
-    await expect(menuButton).toHaveAttribute(
-      "aria-expanded",
-      "true",
-    );
+    await expect(menuButton).toHaveAttribute("aria-expanded", "true");
   });
 
   test("le menu mobile peut être fermé", async ({ page }) => {
@@ -38,35 +35,28 @@ test.describe("Responsive - navigation mobile", () => {
 
     await menuButton.click();
 
-    await expect(menuButton).toHaveAttribute(
-      "aria-expanded",
-      "true",
-    );
+    await expect(menuButton).toHaveAttribute("aria-expanded", "true");
 
     await menuButton.click();
 
-    await expect(menuButton).toHaveAttribute(
-      "aria-expanded",
-      "false",
-    );
+    await expect(menuButton).toHaveAttribute("aria-expanded", "false");
   });
   test("un utilisateur mobile peut accéder au contact", async ({ page }) => {
-  const menuButton = page.getByRole("button", {
-    name: /menu/i,
-  });
+    const menuButton = page.getByRole("button", {
+      name: /menu/i,
+    });
 
-  await menuButton.click();
+    await menuButton.click();
 
     const contactLink = page.getByRole("link", {
-    name: "Contact",
-    exact: true,
+      name: "Contact",
+      exact: true,
     });
 
     await contactLink.click();
 
-  await expect(page).toHaveURL(/#contact$/);
+    await expect(page).toHaveURL(/#contact$/);
 
-  await expect(page.locator("#contact")).toBeVisible();
-});
-
+    await expect(page.locator("#contact")).toBeVisible();
+  });
 });

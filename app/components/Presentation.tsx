@@ -1,7 +1,7 @@
 import ContactSection from "./ContactSection";
 import SideProjectSection from "./SideProjectSection";
 import WorkSection from "./WorkSection";
-import {Spacing} from "./Spacing";
+import { Spacing } from "./Spacing";
 import { Hero } from "./Hero";
 import About from "./About";
 import Skills from "./Skills";
@@ -14,49 +14,48 @@ import Separator from "./separateur";
  * sections dans le bon ordre.
  */
 
-export default function Presentation (){
+export default function Presentation() {
+  return (
+    <>
+      {/* Présentation principale */}
+      <Spacing size="mb" />
+      <Hero />
+      <Spacing size="mb" />
 
-    return (
-        <>
-            {/* Présentation principale */}
-            <Spacing size="mb" />
-            <Hero />
-            <Spacing size="mb" />
+      <Separator />
 
-            <Separator />
+      {/* Présentation personnelle */}
+      <Spacing size="mb" />
+      <About />
+      <Spacing size="mb" />
 
-            {/* Présentation personnelle */}
-            <Spacing size="mb" />
-            <About />
-            <Spacing size="mb" />
+      <Separator />
 
-            <Separator />
+      {/* Compétences techniques */}
+      <Spacing size="mb" />
+      <Skills />
+      <Spacing size="mb" />
 
-            {/* Compétences techniques */}
-            <Spacing size="mb" />
-            <Skills />
-            <Spacing size="mb" />
+      <Separator />
 
-            <Separator />
+      {/* Projets */}
+      <Spacing size="mb" />
+      <SideProjectSection />
+      <Spacing size="mb" />
 
-            {/* Projets */}
-            <Spacing size="mb" />
-            <SideProjectSection />
-            <Spacing size="mb" />
+      <Separator />
 
-            <Separator />
-            
-            {/* Parcours */}
-            <Spacing size="mb" />
-            <WorkSection />
-            <Spacing size="mb" />
+      {/* Parcours */}
+      <Spacing size="mb" />
+      <WorkSection />
+      <Spacing size="mb" />
 
-            <Separator />
-            
-            {/* Contact / recrutement */}
-            <Spacing size="mb" />
-            <ContactSection />
-            <Spacing size="mb" />
-        </> 
-    );
-};
+      <Separator />
+
+      {/* Contact / recrutement */}
+      <Spacing size="mb" />
+      <ContactSection />
+      <Spacing size="mb" />
+    </>
+  );
+}

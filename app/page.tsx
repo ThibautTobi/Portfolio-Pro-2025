@@ -3,7 +3,6 @@ import Header from "./components/Header";
 import Presentation from "./components/Presentation";
 
 export default function Home() {
-
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Person",
@@ -15,35 +14,35 @@ export default function Home() {
     url: "https://portfolio-pro-2025.vercel.app",
 
     sameAs: [
-        "https://github.com/ThibautTobi",
-        "https://www.linkedin.com/in/thibaut-denis-2b12b21b1/",
+      "https://github.com/ThibautTobi",
+      "https://www.linkedin.com/in/thibaut-denis-2b12b21b1/",
     ],
 
     knowsAbout: [
-        "JavaScript",
-        "TypeScript",
-        "React",
-        "Next.js",
-        "Node.js",
-        "HTML",
-        "CSS",
-        "Développement web",
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Node.js",
+      "HTML",
+      "CSS",
+      "Développement web",
     ],
-};
+  };
 
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-        __html: JSON.stringify(jsonLd),
+          __html: JSON.stringify(jsonLd),
         }}
       />
 
       <Header />
-        <main>
-          <Presentation />
-        </main>
+      <main>
+        <Presentation />
+      </main>
       <Footer />
     </>
   );

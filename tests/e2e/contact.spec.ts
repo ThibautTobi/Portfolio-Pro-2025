@@ -15,9 +15,11 @@ test.describe("Section contact", () => {
   });
 
   test("le lien GitHub possède la bonne destination", async ({ page }) => {
-    const githubLink = page.getByRole("link", {
-      name: /github/i,
-    }).first();
+    const githubLink = page
+      .getByRole("link", {
+        name: /github/i,
+      })
+      .first();
 
     await expect(githubLink).toHaveAttribute(
       "href",
@@ -26,26 +28,25 @@ test.describe("Section contact", () => {
   });
 
   test("le lien LinkedIn possède une destination", async ({ page }) => {
-    const linkedinLink = page.getByRole("link", {
-      name: /linkedin/i,
-    }).first();
+    const linkedinLink = page
+      .getByRole("link", {
+        name: /linkedin/i,
+      })
+      .first();
 
-    await expect(linkedinLink).toHaveAttribute(
-      "href",
-      /linkedin\.com\/in\//,
-    );
+    await expect(linkedinLink).toHaveAttribute("href", /linkedin\.com\/in\//);
   });
 
-test("le lien email utilise mailto", async ({ page }) => {
-  const emailLink = page.locator(
-    'a[href="mailto:thibaut.denis.developpeur@gmail.com"]',
-  );
+  test("le lien email utilise mailto", async ({ page }) => {
+    const emailLink = page.locator(
+      'a[href="mailto:thibaut.denis.developpeur@gmail.com"]',
+    );
 
-  await expect(emailLink).toBeVisible();
+    await expect(emailLink).toBeVisible();
 
-  await expect(emailLink).toHaveAttribute(
-    "href",
-    "mailto:thibaut.denis.developpeur@gmail.com",
-  );
-});
+    await expect(emailLink).toHaveAttribute(
+      "href",
+      "mailto:thibaut.denis.developpeur@gmail.com",
+    );
+  });
 });

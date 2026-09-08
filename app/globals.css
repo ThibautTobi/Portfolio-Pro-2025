@@ -41,7 +41,6 @@ body {
     --radius: 0.5rem;
   } */
 
-  
     --background: 0 0% 12%;
     --foreground: 0 0% 85%;
     --muted: 0 12% 16%;
@@ -67,8 +66,7 @@ body {
     --chart-4: 0 0% 28%;
     --chart-5: 0 3% 100%;
     --radius: 0.5rem;
-}
-
+  }
 }
 
 /* linear-gradient(to right top, rgb(107, 33, 168), rgb(0, 0, 0), rgb(88, 28, 135)) */
