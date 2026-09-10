@@ -22,10 +22,7 @@ export default defineConfig({
 
     setupFiles: ["./tests/setup.ts"],
 
-    include: [
-      "tests/unit/**/*.test.ts",
-      "tests/components/**/*.test.tsx",
-    ],
+    include: ["tests/unit/**/*.test.ts", "tests/components/**/*.test.tsx"],
 
     exclude: ["node_modules", "tests/e2e"],
   },
