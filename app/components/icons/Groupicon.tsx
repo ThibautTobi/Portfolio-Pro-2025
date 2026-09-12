@@ -1,6 +1,9 @@
 import { ComponentPropsWithRef } from "react";
 
-export const GroupIcon = ({ size = 24, ...props }: ComponentPropsWithRef<"svg"> & { size?: number }) => {
+export const GroupIcon = ({
+  size = 24,
+  ...props
+}: ComponentPropsWithRef<"svg"> & { size?: number }) => {
   return (
     <svg
       width={size}
