@@ -30,13 +30,6 @@ export const metadata: Metadata = {
     "développeur web junior",
     "développeur Front-End",
     "développeur Full Stack",
-    "React",
-    "Next.js",
-    "JavaScript",
-    "TypeScript",
-    "Node.js",
-    "développeur React",
-    "développeur Next.js",
   ],
 
   alternates: {
@@ -54,6 +47,15 @@ export const metadata: Metadata = {
       "Portfolio de Denis Thibaut, développeur web junior spécialisé en Front-End et ouvert aux opportunités Full Stack.",
 
     siteName: "Denis Thibaut — Portfolio",
+
+    images: [
+      {
+        url: "/image/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Denis Thibaut — Développeur Web Junior",
+      },
+    ],
   },
 
   robots: {

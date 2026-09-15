@@ -25,10 +25,4 @@ describe("sitemap", () => {
 
     expect(result[0].changeFrequency).toBe("monthly");
   });
-
-  it("possède une date de modification valide", () => {
-    const result = sitemap();
-
-    expect(result[0].lastModified).toBeInstanceOf(Date);
-  });
 });

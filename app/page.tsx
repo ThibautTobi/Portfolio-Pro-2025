@@ -3,32 +3,38 @@ import Header from "./components/Header";
 import Presentation from "./components/Presentation";
 
 export default function Home() {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Person",
+  const siteUrl = "https://portfolio-pro-2025.vercel.app";
 
-    name: "Denis Thibaut",
+    const jsonLd = {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "@id": `${siteUrl}/#person`,
 
-    jobTitle: "Développeur Web Junior",
+      name: "Denis Thibaut",
 
-    url: "https://portfolio-pro-2025.vercel.app",
+      jobTitle: "Développeur Web Junior",
 
-    sameAs: [
-      "https://github.com/ThibautTobi",
-      "https://www.linkedin.com/in/thibaut-denis-2b12b21b1/",
-    ],
+      description:
+        "Développeur web junior spécialisé en Front-End avec JavaScript, TypeScript, React et Next.js, ouvert aux opportunités Front-End et Full Stack.",
 
-    knowsAbout: [
-      "JavaScript",
-      "TypeScript",
-      "React",
-      "Next.js",
-      "Node.js",
-      "HTML",
-      "CSS",
-      "Développement web",
-    ],
-  };
+      url: siteUrl,
+
+      sameAs: [
+        "https://github.com/ThibautTobi",
+        "https://www.linkedin.com/in/thibaut-denis-2b12b21b1/",
+      ],
+
+      knowsAbout: [
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Next.js",
+        "Node.js",
+        "HTML",
+        "CSS",
+        "Développement web",
+      ],
+    };
 
   return (
     <>
