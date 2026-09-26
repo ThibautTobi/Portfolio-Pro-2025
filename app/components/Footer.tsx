@@ -29,11 +29,12 @@ export default function Footer() {
               href="https://github.com/ThibautTobi"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="GitHub"
+              aria-label="Voir mon profil GitHub"
+              className="rounded-sm transition-transform duration-300 hover:scale-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
             >
               <GithubIcon
                 size={30}
-                className="transition-transform duration-300 hover:scale-110"
+                className="transition-transform duration-300"
               />
             </a>
 
@@ -41,11 +42,12 @@ export default function Footer() {
               href="https://www.linkedin.com/in/thibaut-denis-2b12b21b1/"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="LinkedIn"
+              aria-label="Voir mon profil LinkedIn"
+              className="rounded-sm transition-transform duration-300 hover:scale-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
             >
               <LinkedinIcon
                 size={30}
-                className="transition-transform duration-300 hover:scale-110"
+                className="transition-transform duration-300"
               />
             </a>
           </div>
