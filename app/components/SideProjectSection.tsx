@@ -203,7 +203,7 @@ export default function SideProjectSection() {
             {/* TECHNOLOGIES */}
 
             <div className="mt-5">
-              <h4 className="text-sm font-semibold">Technologies</h4>
+              <p className="text-sm font-semibold">Technologies</p>
 
               <ul
                 aria-label={`Technologies utilisées pour ${project.title}`}
@@ -228,7 +228,7 @@ export default function SideProjectSection() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={`Voir le code source de ${project.title} sur GitHub`}
-                className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium border rounded-md hover:bg-muted transition-colors"
+                className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium border rounded-md hover:bg-muted transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
               >
                 <Github aria-hidden="true" className="w-4 h-4" />
                 Code source
@@ -240,7 +240,7 @@ export default function SideProjectSection() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={`Voir le site de ${project.title}`}
-                  className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-md bg-primary text-primary-foreground hover:opacity-90 transition-opacity"
+                  className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-md bg-primary text-primary-foreground hover:opacity-90 transition-opacity focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
                 >
                   <ExternalLink aria-hidden="true" className="w-4 h-4" />
                   Voir le site
@@ -260,9 +260,10 @@ export default function SideProjectSection() {
 
         <a
           href="https://github.com/ThibautTobi"
+          aria-label="Voir mon profil GitHub"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 mt-5 font-bold hover:underline"
+          className="inline-flex items-center gap-2 mt-5 font-bold hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
         >
           <Github aria-hidden="true" className="w-8 h-8" />
           Voir mon GitHub
