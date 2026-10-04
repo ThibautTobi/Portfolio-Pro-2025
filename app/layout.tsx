@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     siteName: "Denis Thibaut — Portfolio",
     images: [
       {
-        url: "/image/og-image.png",
+        url: "/image/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Denis Thibaut — Développeur Web Junior",
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     title: "Denis Thibaut | Développeur Web Junior Front-End / Full Stack",
     description:
       "Portfolio de Denis Thibaut, développeur web junior spécialisé en Front-End et ouvert aux opportunités Full Stack.",
-    images: ["/image/og-image.png"],
+    images: ["/image/og-image.jpg"],
   },
 
   robots: {
