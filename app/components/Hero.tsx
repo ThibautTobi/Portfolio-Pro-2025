@@ -32,6 +32,7 @@ export const Hero = () => {
             Front-End · Full Stack
           </p>
         </div>
+
         <div className="flex-shrink-0">
           <Image
             src={moi}
@@ -43,6 +44,7 @@ export const Hero = () => {
           />
         </div>
       </div>
+
       <div>
         <p className="text-lg leading-relaxed">
           Passionné par le développement web et les technologies numériques,
@@ -51,7 +53,7 @@ export const Hero = () => {
         </p>
 
         <p className="text-lg leading-relaxed mt-4">
-          Je travaille principalement avec : {""}
+          Je travaille principalement avec :{" "}
           <strong>JavaScript, TypeScript, React et Next.js</strong>, tout en
           restant ouvert à de nouveaux frameworks et environnements techniques.
         </p>
@@ -60,14 +62,14 @@ export const Hero = () => {
         <div className="flex flex-wrap gap-4 mt-8 justify-center">
           <a
             href="#projects"
-            className="inline-flex items-center justify-center rounded-md px-5 py-3 font-medium border-2 hover:bg-accent transition-colors"
+            className="inline-flex items-center justify-center rounded-md px-5 py-3 font-medium border-2 hover:bg-accent transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
           >
             Voir mes projets
           </a>
 
           <a
             href="#contact"
-            className="inline-flex items-center justify-center rounded-md px-5 py-3 font-medium border-2 hover:bg-accent transition-colors"
+            className="inline-flex items-center justify-center rounded-md px-5 py-3 font-medium border-2 hover:bg-accent transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
           >
             Me contacter
           </a>

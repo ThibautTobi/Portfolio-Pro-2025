@@ -57,11 +57,14 @@ export default function ContactSection() {
           {/* Email */}
           <a
             href="mailto:thibaut.denis.developpeur@gmail.com"
-            className="inline-flex items-center justify-center gap-4 rounded-md px-5 py-3 font-medium border-2 hover:bg-accent transition-colors"
+            className="inline-flex items-center justify-center gap-4 rounded-md px-5 py-3 font-medium border-2 hover:bg-accent transition-colors focus-visible:outline-none
+focus-visible:ring-2
+focus-visible:ring-primary
+focus-visible:ring-offset-2"
           >
             <Mail
               aria-hidden="true"
-              className="w-8 h-8 transition-transform duration-300 hover:scale-110"
+              className="w-8 h-8 transition-transform duration-300 hover:scale-110 "
             />
             Me contacter
           </a>
@@ -69,9 +72,13 @@ export default function ContactSection() {
           {/* GitHub */}
           <a
             href="https://github.com/ThibautTobi"
+            aria-label="Voir mon profil GitHub"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-4 rounded-md px-5 py-3 font-medium border-2 hover:bg-accent transition-colors"
+            className="inline-flex items-center justify-center gap-4 rounded-md px-5 py-3 font-medium border-2 hover:bg-accent transition-colors focus-visible:outline-none
+focus-visible:ring-2
+focus-visible:ring-primary
+focus-visible:ring-offset-2"
           >
             <GithubIcon
               size={30}
@@ -83,9 +90,13 @@ export default function ContactSection() {
           {/* LinkedIn */}
           <a
             href="https://www.linkedin.com/in/thibaut-denis-2b12b21b1/"
+            aria-label="Voir mon profil LinkedIn"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-4 rounded-md px-5 py-3 font-medium border-2 hover:bg-accent transition-colors"
+            className="inline-flex items-center justify-center gap-4 rounded-md px-5 py-3 font-medium border-2 hover:bg-accent transition-colors focus-visible:outline-none
+focus-visible:ring-2
+focus-visible:ring-primary
+focus-visible:ring-offset-2"
           >
             <LinkedinIcon
               size={30}

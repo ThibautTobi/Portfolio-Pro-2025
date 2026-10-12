@@ -75,7 +75,7 @@ export default function Header() {
               <li key={item.href}>
                 <a
                   href={item.href}
-                  className="block py-3 text-primary transition-colors hover:text-muted-foreground duration-300 ease-out"
+                  className="block py-3 text-primary transition-colors hover:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 duration-300 ease-out"
                 >
                   {item.label}
                 </a>
@@ -92,6 +92,7 @@ export default function Header() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Voir mon profil GitHub"
+            className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded-sm"
           >
             <GithubIcon
               size={30}
@@ -104,6 +105,7 @@ export default function Header() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Voir mon profil LinkedIn"
+            className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded-sm"
           >
             <LinkedinIcon
               size={30}
@@ -115,6 +117,7 @@ export default function Header() {
         {/* BOUTON MENU MOBILE */}
 
         <button
+          type="button"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           className="md:hidden relative w-6 h-6 flex flex-col justify-center items-center gap-1.5"
           aria-label={isMenuOpen ? "Fermer le menu" : "Ouvrir le menu"}
@@ -153,7 +156,7 @@ export default function Header() {
                 <a
                   href={item.href}
                   onClick={handleNavigation}
-                  className="block py-3 text-primary transition-colors hover:text-muted-foreground duration-300 ease-out"
+                  className="block py-3 text-primary transition-colors hover:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 duration-300 ease-out"
                 >
                   {item.label}
                 </a>
@@ -171,7 +174,7 @@ export default function Header() {
             >
               <GithubIcon
                 size={30}
-                className="transition-transform duration-300 hover:scale-110"
+                className="transition-transform duration-300 hover:scale-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
               />
             </a>
 
@@ -183,7 +186,7 @@ export default function Header() {
             >
               <LinkedinIcon
                 size={30}
-                className="transition-transform duration-300 hover:scale-110"
+                className="transition-transform duration-300 hover:scale-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
               />
             </a>
           </div>
