@@ -42,13 +42,9 @@ export default function WorkSection() {
 
           <p className="text-sm font-medium text-primary">Formation</p>
 
-          <h3 className="mt-1 text-xl font-semibold">
-            Bac+2 Développeur Web
-          </h3>
+          <h3 className="mt-1 text-xl font-semibold">Bac+2 Développeur Web</h3>
 
-          <p className="mt-1 text-sm text-muted-foreground">
-            OpenClassrooms
-          </p>
+          <p className="mt-1 text-sm text-muted-foreground">OpenClassrooms</p>
 
           <p className="mt-4 leading-7 text-muted-foreground">
             Formation professionnalisante consacrée à la conception et au
@@ -80,9 +76,7 @@ export default function WorkSection() {
             className="absolute -left-[7px] top-2 h-3 w-3 rounded-full bg-primary"
           />
 
-          <p className="text-sm font-medium text-primary">
-            Certifications
-          </p>
+          <p className="text-sm font-medium text-primary">Certifications</p>
 
           <h3 className="mt-1 text-xl font-semibold">
             Cisco Networking Academy
@@ -158,11 +152,11 @@ export default function WorkSection() {
           <p className="mt-1 text-sm text-muted-foreground">CDI — 35 h</p>
 
           <p className="mt-4 leading-7 text-muted-foreground">
-            Mon expérience chez Decathlon m&apos;a permis de développer mon
-            sens des responsabilités, mon autonomie et ma capacité à travailler
-            en équipe dans un environnement où les besoins évoluent rapidement.
-            Ces compétences sont aujourd&apos;hui complémentaires à mon parcours
-            de développeur web.
+            Mon expérience chez Decathlon m&apos;a permis de développer mon sens
+            des responsabilités, mon autonomie et ma capacité à travailler en
+            équipe dans un environnement où les besoins évoluent rapidement. Ces
+            compétences sont aujourd&apos;hui complémentaires à mon parcours de
+            développeur web.
           </p>
         </article>
       </div>
